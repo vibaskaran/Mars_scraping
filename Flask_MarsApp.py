@@ -60,7 +60,7 @@ app = Flask(__name__)
 def welcome():
     # res1 = md.scrape()
     # return jsonify(res1)
-    conn = "mongodb://test:test@ds243335.mlab.com:43335/heroku_smxwwn9d"
+    conn = "mongodb://system:system@ds243345.mlab.com:43345/heroku_plbdh36b"
     client = pymongo.MongoClient(conn)
 
     db = client.heroku_smxwwn9d
@@ -98,7 +98,7 @@ def welcome():
 #Default Route#
 @app.route("/scrape")
 def scrape1():
-    conn = "mongodb://test:test@ds243335.mlab.com:43335/heroku_smxwwn9d"
+    conn = "mongodb://system:system@ds243345.mlab.com:43345/heroku_plbdh36b"
     client = pymongo.MongoClient(conn)
 
     db = client.heroku_smxwwn9d
