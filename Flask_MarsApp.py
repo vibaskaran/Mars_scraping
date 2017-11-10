@@ -18,30 +18,6 @@ from dateutil.relativedelta import relativedelta
 # Application Setup
 #################################################
 
-#################################################
-# Calculate Start and End date for past 1 year
-#################################################
-
-# end_dt = datetime.today().strftime('%Y-%m-%d')
-# start_dt = (datetime.today() - relativedelta(years=1)).strftime('%Y-%m-%d')
-
-#################################################
-# Database Setup
-#################################################
-# connection_str = 'sqlite:///hawaii.sqlite'
-# engine = create_engine(connection_str)
-
-# reflect an existing database into a new model
-# Base = automap_base()
-# # reflect the tables
-# Base.prepare(engine, reflect=True)
-
-# Save reference to the table
-# Measurement = Base.classes.measurement
-# Station = Base.classes.station
-
-# Create our session (link) from Python to the DB
-# session = Session(engine)
 
 #################################################
 # Flask Setup
@@ -63,7 +39,7 @@ def welcome():
     conn = "mongodb://system:system@ds243345.mlab.com:43345/heroku_plbdh36b"
     client = pymongo.MongoClient(conn)
 
-    db = client.heroku_smxwwn9d
+    db = client.heroku_plbdh36b
     # data1 = db.mars_collection.find()
     mars_collection = db.mars_collection
 
@@ -101,7 +77,7 @@ def scrape1():
     conn = "mongodb://system:system@ds243345.mlab.com:43345/heroku_plbdh36b"
     client = pymongo.MongoClient(conn)
 
-    db = client.heroku_smxwwn9d
+    db = client.heroku_plbdh36b
     # data1 = db.mars_collection.find()
     mars_collection = db.mars_collection
 
